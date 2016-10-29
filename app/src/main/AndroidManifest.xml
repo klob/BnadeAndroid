@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.klobliu.wow">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+
+    <!--    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>-->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name=".MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/GreenTheme">
+        <activity android:name=".MainActivity">
+            <!--  <intent-filter>
+                  <action android:name="android.intent.action.MAIN" />
+                  <category android:name="android.intent.category.LAUNCHER" />
+              </intent-filter>-->
+        </activity>
+        <activity android:name=".ui.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ui.ItemDataActivity"></activity>
+        <activity android:name=".ui.hot.HotFragment$HotActivity"></activity>
+        <activity android:name=".ui.love.LoveFragment$LoveActivity"></activity>
+        <activity android:name=".ui.crash.CrashFragment$CrashActivity"></activity>
+        <activity android:name=".ui.crash.CrashDetailActivity"></activity>
+        <activity android:name=".ui.RouterActivity"></activity>
+        <activity android:name=".ui.UITestActivity"></activity>
+        <activity android:name=".ui.KActivityTest"></activity>
+    </application>
+
+</manifest>

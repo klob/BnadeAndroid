@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">WOW</string>
+    <string name="hot_top_bar">热门搜索</string>
+    <string name="love_top_bar">我的收藏</string>
+    <string name="realm_top_bar">选择服务器</string>
+</resources>
