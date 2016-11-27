@@ -125,21 +125,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener, 
 
             }
         });*/
-        pushFragmentToStack(LoveFragment.class, null);
-        RD.test("http://tv.aiseet.atianqi.com/i-tvbin/cfg/get_cfg?protocol_version=1&user_info=%7B%7D&format=json&version=0&need_client_ip=1&need_server_time=1&cfg_names=auto_switching_resolution%2Bcgi_preload_config%2Bperformance_testing_videos%2Bplugin_support%2Bplugin_list%2Bvip_config%2Bhttpdns_support%2Bvip_pay_config%2Bh5_test_url%2Buninstall_browser_config%2Bfeedback_qq_group%2Bauth_flag%2Btv_authentication%2Bis_app_version%2Bp2p_max_memory%2Bprojection_connect_config%2Bsplash_ad_logo%2Bpay_flow_control%2Bextend_cookie%2Bplayer_recommendation_control%2Bmulti_screen_config%2Bvideo_search_config%2Bvip_activity%2Bweb_ver_key%2Bdef_preload_config%2Bvip_intro_login_button_config%2Bvip_intro_unlogin_button_config%2Bsearch_phone_scan%2Bhevc_support%2Bprice_config%2Bvod_finish_threshold%2Bchild_ui_config%2Bh5_recommend_page_support%2Bpersonal_invalid_menu_tips%2Babout_app_description%2BPT%2BPR%2BAPPKEY%2BMTA_HOST%2BMTA_HOST_DEFAULT%2BCRASH_HOST%2BCRASH_HOST_DEFAULT%2BMTA_LOG_HOST%2BMTA_LOG_HOST_DEFAULT%2BMTA_MID_HOST%2BMTA_MID_HOST_DEFAULT%2BMTA_APP_ID%2BMTA_APP_KEY%2BVIDEO_DOMAIN%2BVIDEO_DOMAIN_DEFAULT%2BLICENSE_TAG%2BGUID_REQUEST_STRATEGY_TAG%2BUPGRADE_STRATEGY_TAG%2BSTATUSBAR_STRATEGY_TAG%2BMESSAGE_STRATEGY_TAG%2BAPP_INTEGRATE_TYPE%2BSPLASH_CONFIG%2BPerCenterShowList%2BEXIT_TAG%2BPLAYER_DOWNLOADER_MAX_USE_MEMORY%2BDEFINITION_4k_FLAG%2BLOGREPORT_URL%2BLOGREPORT_URL_DEFAULT%2BDEBUG_LOG%2BVOICE_CONTROL_TAG%2BPROJECTION_LONGPOLL%2BPROJECTION_CGI%2BCGI_PRELOAD_TAG%2BIS_CORP&guid=06EB5D1A00E081E142ED006B5603A65D&Q-UA=QV%3D1%26PR%3DVIDEO%26PT%3DSNMAPP%26CHID%3D10009%26RL%3D1920*1080%26VN%3D2.1.0%26VN_CODE%3D1400%26SV%3D5.1.1%26DV%3DJurassicPark%26VN_BUILD%3D0%26MD%3DMiBOX3%26BD%3DJurassicPark%26TVKPlatform%3D670603",
-                new StringCallback() {
-                    @Override
-                    public void onError(Call call, Exception e, int id) {
-                        L.e(TAG, e);
-                    }
-
-                    @Override
-                    public void onResponse(String response, int id) {
-                        L.e(TAG, response);
-                    }
-                });
-        startAnimActivity(UITestActivity.class);
-        startAnimActivity(KActivityTest.class);
+     
     }
 
     @Override
